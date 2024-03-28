@@ -1,0 +1,59 @@
+.main__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__div>figure>img {
+    width: 55px;
+    height: 55px;
+}
+
+.main__div>h2 {
+    margin-top: -10px;
+    font-weight: 400;
+}
+.login__card{
+    background-color: #f6f8fa;
+    border: 1px solid hsla(210, 18%, 87%, 1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    height: 150px;
+}
+.login__card > input , label , button{
+    display: block;
+}
+.login__card > label{
+    text-align: left;
+    margin-bottom: 8px;
+}
+.login__card > input{
+    width: 94%;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #d0d7de;
+    padding-left: 10px;
+}
+.login__card > input:focus{
+    border: 2px solid #0969da;
+}
+.login__card > small{
+    float: right;
+    margin-top: 8px;
+    color: #e52929;
+}
+.login__card > button{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: #1f883d;
+    color: #ffffff;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}

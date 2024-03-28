@@ -1,0 +1,48 @@
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card__box {
+    border: 1px solid #d0d7de;
+    padding: 5px 15px;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__title>p {
+    border: 1px solid #d0d7de;
+    color: #636c76;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 30px;
+}
+
+.card__title>i {
+    color: #636c76;
+}
+
+.card__title>h4 {
+    color: #0969da;
+}
+.card__body{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -20px;
+}
+.card__body>p:first-of-type {
+    background-color: #0969da;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
