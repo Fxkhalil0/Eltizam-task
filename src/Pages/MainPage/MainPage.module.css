@@ -228,6 +228,9 @@ nav{
     .icons{
         display: flex;
     }
+    .search__input>input {
+        width: 80%;
+    }
   }
 @media(max-width:320px){
     .second__part > ul > li.active{
