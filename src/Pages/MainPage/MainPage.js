@@ -34,7 +34,7 @@ function MainPage() {
                     <div className={style["left__side"]}>
                         <i class="fa-solid fa-bars"></i>
                         <img src={Logo} alt="logo" />
-                        <p>Fatma</p>
+                        <p>{userData?.name}</p>
                     </div>
                     <div className={style["right__side"]}>
                         <div className={style["search__input"]}>
