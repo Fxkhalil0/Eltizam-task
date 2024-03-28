@@ -50,7 +50,7 @@ function MainPage() {
                             <i class="fa-regular fa-circle-dot"></i>
                             <i class="fa-solid fa-code-pull-request"></i>
                             <i class="fa-solid fa-inbox"></i>
-                            <img src={Logo} alt="user's avatar" />
+                            <img src={userData?.avatar_url} alt="user's avatar" />
                         </div>
                     </div>
                 </div>
