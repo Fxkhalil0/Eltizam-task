@@ -4,6 +4,7 @@ import Logo from '../../assets/pngimg.com - github_PNG40.png'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const uri = process.env.REACT_APP_URI
 
 function LoginPage() {
     const [userName, setUserName] = useState("")
@@ -16,7 +17,7 @@ function LoginPage() {
             return;
         }
         try {
-            const response = await axios.get(`https://api.github.com/users/${userName}`);
+            const response = await axios.get(`${uri}/users/${userName}`);
             navigate(`/home/${userName}`);
             setError("");
         } catch (err) {

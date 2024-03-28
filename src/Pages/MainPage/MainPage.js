@@ -5,6 +5,8 @@ import Card from "../Components/Card";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
+const uri = process.env.REACT_APP_URI
+
 
 function MainPage() {
     const [userData, setUserData] = useState(null);
@@ -13,7 +15,7 @@ function MainPage() {
     // console.log(userName)
 
     useEffect(() => {
-        axios.get(`https://api.github.com/users/${userName}`)
+        axios.get(`${uri}/users/${userName}`)
             .then((response) => {
                 console.log(response.data);
                 setUserData(response.data);
