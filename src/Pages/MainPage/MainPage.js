@@ -17,7 +17,7 @@ function MainPage() {
     useEffect(() => {
         axios.get(`${uri}/users/${userName}`)
             .then((response) => {
-                console.log(response.data);
+                // console.log(response.data);
                 setUserData(response.data);
             })
             .catch((error) => {
