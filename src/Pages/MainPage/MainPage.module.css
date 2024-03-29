@@ -130,6 +130,8 @@ nav{
 }
 .user__info > h1{
     margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 .user__info > span{
     font-size: 17px;
