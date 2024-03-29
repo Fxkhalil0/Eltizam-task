@@ -128,14 +128,12 @@ nav{
     width: 100%;
     border-radius: 50%;
 }
-.user__info{
-    text-align: justify;
-}
 .user__info > h1{
     margin-bottom: 0;
 }
-.user__info > small{
+.user__info > span{
     font-size: 17px;
+    display: block;
 }
 .user__info > button{
     text-align: center;
@@ -183,11 +181,8 @@ nav{
         margin-left: 50%;
         transform: translateX(-60%)
     }
-    .user__info > small{
-        margin-left: 45%;
-
-    }
-    .user__info > h1{
+    .user__info > h1,
+    .user__info > span{
         text-align: center;
     }
   }
@@ -210,9 +205,6 @@ nav{
 @media(max-width:500px){
     .second__part > ul > li{
         width: 46%;
-    }
-    .user__info > small{
-        margin-left: 40%;
     }
   }
 @media(max-width:440px){

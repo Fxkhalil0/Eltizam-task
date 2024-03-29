@@ -71,7 +71,7 @@ function MainPage() {
                             <img src={userData?.avatar_url} alt="user's avatar" />
                             <div className={style["user__info"]}>
                                 <h1>{userData?.name}</h1>
-                                <small>{userData?.login}</small>
+                                <span>{userData?.login}</span>
                                 <p>{userData?.bio}</p>
                                 <button>Edit Profile</button>
                                 <div className={style["followers"]}>
