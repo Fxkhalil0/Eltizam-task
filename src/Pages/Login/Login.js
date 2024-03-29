@@ -9,6 +9,7 @@ const uri = process.env.REACT_APP_URI
 function LoginPage() {
     const [userName, setUserName] = useState("")
     const [error, setError] = useState("");
+    const [disable, setDisable] = useState(false);
     const navigate = useNavigate();
 
     const handleSignIn = async () => {
@@ -17,11 +18,14 @@ function LoginPage() {
             return;
         }
         try {
+            setDisable(true);
+            // eslint-disable-next-line
             const response = await axios.get(`${uri}/users/${userName}`);
             navigate(`/home/${userName}`);
             setError("");
         } catch (err) {
             setError("User not found");
+            setDisable(false);
         }
     };
     return (
@@ -37,7 +41,13 @@ function LoginPage() {
                         onChange={(e) => setUserName(e.target.value)}
                     />
                     {error && <small>{error}</small>}
-                    <button onClick={handleSignIn}>Sign In</button>
+                    <button 
+                    onClick={handleSignIn}
+                    disabled={disable}
+                    className={disable ? style.disabledButton : ''}
+                    >
+                    {disable ? 'Signing In...' : 'Sign In'}
+                    </button>
                 </div>
             </div>
         </>

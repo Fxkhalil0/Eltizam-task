@@ -23,7 +23,7 @@ function MainPage() {
             .catch((error) => {
                 console.error("Error fetching user data:", error);
             });
-    }, []);
+    }, [userName]);
     const handleItemClick = (item) => {
         setActiveItem(item);
     };
